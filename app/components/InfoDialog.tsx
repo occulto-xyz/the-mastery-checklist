@@ -28,17 +28,19 @@ export default function InfoDialog() {
           <DialogTitle className="italic text-stone-50 lg:text-xl text-base">
             THE MASTERY CHECKLIST
           </DialogTitle>
-          <DialogDescription className="text-stone-400 space-y-4 lg:text-sm text-xs">
+          <p className="text-stone-400 space-y-4 lg:text-sm text-xs">
             Define your daily tasks by inputing the{" "}
             <span className="text-stone-50 italic"></span>{" "}
             <span className="text-stone-50 italic">Difficulty</span> and{" "}
             <span className="text-stone-50 italic">Importance</span> of each of
-            them. Then, a table will be shown with the tasks ordered by the{" "}
-            <span className="text-stone-50 italic">Priority</span> of each of
-            them. The <span className="text-stone-50 italic">Difficulty</span>{" "}
-            and <span className="text-stone-50 italic">Importance</span> units
-            should be negatively correlated
-          </DialogDescription>
+            them. Then, a table with all the tasks will be shown sorted by {" "}
+            <span className="text-stone-50 italic">Priority</span>.
+          </p>
+          <p className="text-stone-400 space-y-4 lg:text-sm text-xs">
+            The <span className="text-stone-50 italic">Difficulty</span> and{" "}
+            <span className="text-stone-50 italic">Importance</span> units
+            should be negatively correlated as shown in the diagrams below.
+          </p>
         </DialogHeader>
         <div className="flex flex-col justify-center items-center space-y-5">
           <Image
