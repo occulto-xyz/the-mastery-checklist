@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Martian_Mono } from "next/font/google";
 import Footer from "./components/layout/Footer";
 import Nav from "./components/layout/Nav";
+import { Analytics } from "@/components/analytics/analytics";
 
 const martian = Martian_Mono({ subsets: ["latin"] });
 
@@ -52,6 +53,7 @@ export default function RootLayout({
       <body className={`${martian.className} bg-stone-900`}>
         <Nav />
         {children}
+        <Analytics />
         <Footer />
       </body>
     </html>
