@@ -37,6 +37,6 @@
     "tailwindcss": "3.3.3",
     "tailwindcss-animate": "^1.0.6",
     "typescript": "5.2.2",
-    "zod": "link:@hookform/resolvers/zod"
+    "zod": "^3.22.2"
   }
 }
