@@ -1,6 +1,6 @@
 import { Separator } from "@/components/ui/separator";
-import AnimatedHeaders from "./AnimatedHeaders";
-import InfoDialog from "./InfoDialog";
+import AnimatedHeaders from "../AnimatedHeaders";
+import InfoDialog from "../InfoDialog";
 
 export default function Nav() {
   return (

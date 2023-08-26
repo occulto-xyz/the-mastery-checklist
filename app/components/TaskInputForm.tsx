@@ -1,12 +1,6 @@
 "use client";
 
-import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  FormMessage,
-} from "@/components/ui/form";
+import { Form, FormControl, FormField, FormItem } from "@/components/ui/form";
 import {
   Select,
   SelectContent,
@@ -16,7 +10,6 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { FieldValues, useForm } from "react-hook-form";
 import { Task, taskSchema } from "@/lib/validators";
@@ -27,17 +20,26 @@ type TaskInputFormProps = {
 };
 
 export default function TaskInputForm(props: TaskInputFormProps) {
+  const defaultValues: Task = {
+    taskName: "",
+    difficulty: "",
+    importance: "",
+  };
+
   const form = useForm<Task>({
     resolver: zodResolver(taskSchema),
+    defaultValues: defaultValues,
   });
 
   function onSubmit(values: FieldValues) {
     const task: Task = {
       taskName: values.taskName,
       difficulty: values.difficulty,
-      priority: values.priority,
+      importance: values.importance,
     };
+
     props.changeTasks(task);
+    form.reset(defaultValues);
   }
 
   return (
@@ -60,7 +62,6 @@ export default function TaskInputForm(props: TaskInputFormProps) {
                     {...field}
                   />
                 </FormControl>
-                <FormMessage />
               </FormItem>
             );
           }}
@@ -98,14 +99,13 @@ export default function TaskInputForm(props: TaskInputFormProps) {
                     </SelectGroup>
                   </SelectContent>
                 </Select>
-                <FormMessage />
               </FormItem>
             );
           }}
         />
         <FormField
           control={form.control}
-          name="priority"
+          name="importance"
           render={({ field }) => {
             return (
               <FormItem>
@@ -117,7 +117,7 @@ export default function TaskInputForm(props: TaskInputFormProps) {
                 >
                   <FormControl>
                     <SelectTrigger className="bg-stone-900 border-2 border-stone-50 text-stone-50">
-                      <SelectValue placeholder="Priority" />
+                      <SelectValue placeholder="Importance" />
                     </SelectTrigger>
                   </FormControl>
                   <SelectContent className="bg-stone-900 border-2 border-stone-50 text-stone-50">
@@ -136,7 +136,6 @@ export default function TaskInputForm(props: TaskInputFormProps) {
                     </SelectGroup>
                   </SelectContent>
                 </Select>
-                <FormMessage />
               </FormItem>
             );
           }}

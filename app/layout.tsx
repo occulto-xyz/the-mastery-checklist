@@ -1,8 +1,8 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Martian_Mono } from "next/font/google";
-import Footer from "./components/Footer";
-import Nav from "./components/Nav";
+import Footer from "./components/layout/Footer";
+import Nav from "./components/layout/Nav";
 
 const martian = Martian_Mono({ subsets: ["latin"] });
 

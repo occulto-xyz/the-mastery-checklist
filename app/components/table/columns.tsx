@@ -1,27 +1,40 @@
+import { Checkbox } from "@/components/ui/checkbox";
 import { ColumnDef } from "@tanstack/react-table";
 
 export type AnalyzedTask = {
   taskName: string;
   difficulty: string;
+  importance: string;
   priority: string;
-  result: string;
 };
 
 export const taskColumns: ColumnDef<AnalyzedTask>[] = [
   {
+    id: "select",
+    cell: ({ row }) => (
+      <Checkbox
+        checked={row.getIsSelected()}
+        onCheckedChange={(value) => row.toggleSelected(!!value)}
+        aria-label="Select row"
+      />
+    ),
+    enableSorting: false,
+    enableHiding: false,
+  },
+  {
     accessorKey: "taskName",
-    header: "Task Name",
+    header: () => <div className="text-center">Task Name</div>,
   },
   {
     accessorKey: "difficulty",
-    header: "Difficulty",
+    header: () => <div className="text-center">Difficulty</div>,
+  },
+  {
+    accessorKey: "importance",
+    header: () => <div className="text-center">Importance</div>,
   },
   {
     accessorKey: "priority",
-    header: "Priority",
-  },
-  {
-    accessorKey: "result",
-    header: "Result",
+    header: () => <div className="text-center">Priority</div>,
   },
 ];
