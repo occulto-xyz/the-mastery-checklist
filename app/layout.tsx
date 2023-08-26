@@ -50,7 +50,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${martian.className} bg-stone-900`}>
+      <body className={`${martian.className} bg-stone-900 overflow-x-hidden`}>
         <Nav />
         {children}
         <Analytics />
