@@ -11,7 +11,12 @@ export default function Footer() {
           <h1 className="lg:text-base text-xs font-extralight text-stone-100">
             Made by
           </h1>
-          <Link className="lg:pb-0 pb-3" href="https://occulto.xyz" passHref>
+          <Link
+            className="lg:pb-0 pb-3"
+            href="https://occulto.xyz"
+            passHref
+            target="_blank"
+          >
             <Image
               src={occultoIcons}
               alt="Occulto Icon"
@@ -27,12 +32,25 @@ export default function Footer() {
           <Link
             className="text-2xl lg:pb-0 pb-3"
             href="https://www.instagram.com/lukebelmar/"
+            target="_blank"
           >
             👽
           </Link>
         </div>
       </div>
-      <div className="grid-cols-1 flex lg:justify-end justify-center items-center">
+      <div className="grid-cols-1 flex flex-col lg:justify-end justify-center items-end">
+        <Link
+          href="https://github.com/occulto-xyz/the-checklist"
+          passHref
+          target="_blank"
+        >
+          <Button
+            variant="link"
+            className="lg:text-base text-xs font-extralight text-stone-100 underline"
+          >
+            Source code
+          </Button>
+        </Link>
         <Link
           href="mailto:occcultoagency@gmail.com?subject=Issue%20in%20The%Checklist%20App"
           passHref
