@@ -21,10 +21,10 @@ export default function FormButton() {
       }}
     >
       {pending && <Icons.spinner className="animate-spin w-6 h-6" />}
-      {!pending && !isSubmitted ? (
-        "Add Task"
-      ) : (
+      {!pending && isSubmitted ? (
         <Icons.check className="w-6 h-6" />
+      ) : (
+        "Add Task"
       )}
     </Button>
   );

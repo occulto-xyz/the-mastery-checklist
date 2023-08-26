@@ -16,7 +16,7 @@ export default function InfoDialog() {
     <Dialog>
       <DialogTrigger asChild>
         <Button
-          className="bg-stone-50 text-stone-900 border-2 border-stone-50 hover:bg-stone-900 hover:text-stone-50"
+          className="bg-stone-50 text-stone-900 border-2 border-stone-50 hover:bg-stone-900 hover:text-stone-50 lg:w-72 w-44 lg:text-sm text-xs"
           variant="outline"
           size="sm"
         >
@@ -28,23 +28,16 @@ export default function InfoDialog() {
           <DialogTitle className="italic text-stone-50">
             THE CHECKLIST
           </DialogTitle>
-          <DialogDescription className="text-stone-400 space-y-4">
+          <DialogDescription className="text-stone-400 space-y-4 lg:text-sm text-xs">
             Define your daily tasks by inputing the{" "}
             <span className="text-stone-50 italic"></span>{" "}
             <span className="text-stone-50 italic">Difficulty</span> and{" "}
             <span className="text-stone-50 italic">Importance</span> of each of
             them. Then, a table will be shown with the tasks ordered by the{" "}
             <span className="text-stone-50 italic">Priority</span> of each of
-            them.
-            {/* <p className="hidden">
-              When you rate a task's{" "}
-              <span className="text-stone-50 italic">Difficulty</span> from 0 to
-              10, you're actually placing it on a scale where 0 represents the
-              most challenging and 10 is the easiest. Similarly, when you rate a
-              task's <span className="text-stone-50 italic">Importance </span>
-              from 0 to 10, you're placing it on a scale where 0 signifies the
-              least relevant and 10 signifies the utmost relevance.
-            </p> */}
+            them. The <span className="text-stone-50 italic">Difficulty</span>{" "}
+            and <span className="text-stone-50 italic">Importance</span> units
+            should be negatively correlated
           </DialogDescription>
         </DialogHeader>
         <div className="flex flex-col justify-center items-center space-y-5">
