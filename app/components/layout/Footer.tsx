@@ -6,13 +6,12 @@ import { Button } from "@/components/ui/button";
 export default function Footer() {
   return (
     <footer className="lg:grid lg:grid-cols-2 flex flex-col p-24 w-screen">
-      <div className="flex flex-col lg:space-y-2 space-y-1">
-        <div className="grid-cols-1 flex flex-row lg:space-x-2 lg:space-y-0 space-y-4 lg:justify-start justify-center items-center">
+      <div className="grid-cols-1 flex flex-col">
+        <div className="flex flex-row lg:space-x-2 lg:justify-start justify-center items-center">
           <h1 className="lg:text-base text-xs font-extralight text-stone-100">
             Made by
           </h1>
           <Link
-            className="lg:pb-0 pb-3"
             href="https://occulto.xyz"
             passHref
             target="_blank"
@@ -25,12 +24,12 @@ export default function Footer() {
             />
           </Link>
         </div>
-        <div className="grid-cols-1 flex flex-row lg:space-x-2 lg:space-y-0 space-y-4 lg:justify-start justify-center items-center">
+        <div className="flex flex-row lg:space-x-2 lg:space-y-0 space-y-4 lg:justify-start justify-center items-center">
           <h1 className="lg:text-base text-xs font-extralight text-stone-100">
             Inspired by
           </h1>
           <Link
-            className="text-2xl lg:pb-0 pb-3"
+            className="text-2xl lg:pb-0 pb-4 lg:pl-0 pl-2"
             href="https://www.instagram.com/lukebelmar/"
             target="_blank"
           >
@@ -38,7 +37,7 @@ export default function Footer() {
           </Link>
         </div>
       </div>
-      <div className="grid-cols-1 flex flex-col lg:justify-end justify-center items-end">
+      <div className="grid-cols-1 flex flex-col lg:justify-end justify-center lg:items-end items-center">
         <Link
           href="https://github.com/occulto-xyz/the-checklist"
           passHref
