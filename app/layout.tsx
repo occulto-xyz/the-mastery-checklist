@@ -10,17 +10,17 @@ const martian = Martian_Mono({ subsets: ["latin"] });
 export const metadata: Metadata = {
   // Default metadata
   title: {
-    default: "The Checklist",
+    default: "The Mastery Checklist",
     template: "%s | thechecklist.app",
   },
   description:
     "The web app to create rule sets that dictate your operating system.",
   openGraph: {
-    title: "The Checklist",
+    title: "The Mastery Checklist",
     description:
       "The web app to create rule sets that dictate your operating system.",
     url: "thechecklist.app",
-    siteName: "The Checklist",
+    siteName: "The Mastery Checklist",
     type: "website",
   },
   robots: {

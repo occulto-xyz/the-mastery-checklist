@@ -25,8 +25,8 @@ export default function InfoDialog() {
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px] bg-stone-900">
         <DialogHeader className="space-y-5">
-          <DialogTitle className="italic text-stone-50">
-            THE CHECKLIST
+          <DialogTitle className="italic text-stone-50 lg:text-xl text-base">
+            THE MASTERY CHECKLIST
           </DialogTitle>
           <DialogDescription className="text-stone-400 space-y-4 lg:text-sm text-xs">
             Define your daily tasks by inputing the{" "}

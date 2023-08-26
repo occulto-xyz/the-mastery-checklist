@@ -9,7 +9,7 @@ export const runtime = "edge";
 
 export default function Home() {
   const [tasks, setTasks] = useState<Task[]>([]);
-  function changeTasks(task: Task) {
+  function changeTasks(task: Task) { 
     setTasks([...tasks, task]);
   }
 
