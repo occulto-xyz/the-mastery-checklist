@@ -34,7 +34,7 @@ const TasksTable = React.forwardRef<HTMLDivElement, TasksTableProps>(
         </div>
         <div className="flex flex-col justify-center items-center space-y-7">
           <Button
-            className="bg-stone-50 text-stone-900 border-2 border-stone-50 hover:bg-stone-900 hover:text-stone-50 lg:w-72 w-44 lg:text-base text-xs md:block hidden"
+            className="bg-stone-50 text-stone-900 border-2 border-stone-50 hover:bg-stone-900 hover:text-stone-50 lg:w-72 w-44 lg:text-base text-xs sm:block hidden"
             variant="outline"
             onClick={() => {
               const table = document.getElementById("task-table");
