@@ -60,7 +60,7 @@ export default function TaskInputForm(props: TaskInputFormProps) {
           render={({ field }) => {
             return (
               <FormItem>
-                <FormLabel className="text-stone-50 font-medium">
+                <FormLabel className="text-stone-50 font-medium lg:text-sm text-xs">
                   Task Name
                 </FormLabel>
                 <FormControl>
@@ -80,7 +80,7 @@ export default function TaskInputForm(props: TaskInputFormProps) {
           render={({ field }) => {
             return (
               <FormItem>
-                <FormLabel className="text-stone-50 font-medium">
+                <FormLabel className="text-stone-50 font-medium lg:text-sm text-xs">
                   Difficulty
                 </FormLabel>
                 <Select
@@ -122,7 +122,7 @@ export default function TaskInputForm(props: TaskInputFormProps) {
           render={({ field }) => {
             return (
               <FormItem>
-                <FormLabel className="text-stone-50 font-medium">
+                <FormLabel className="text-stone-50 font-medium lg:text-sm text-xs">
                   Importance
                 </FormLabel>
                 <Select

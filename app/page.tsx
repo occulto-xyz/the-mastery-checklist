@@ -1,9 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import TaskInputForm from "./components/TaskInputForm";
+
 import { Task } from "@/lib/validators";
 import TasksTable from "./components/table/TasksTable";
+import TaskInputForm from "./components/inputs/TaskInputForm";
 
 export const runtime = "edge";
 
