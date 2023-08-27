@@ -1,6 +1,12 @@
 "use client";
 
-import { Form, FormControl, FormField, FormItem } from "@/components/ui/form";
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+} from "@/components/ui/form";
 import {
   Select,
   SelectContent,
@@ -54,10 +60,12 @@ export default function TaskInputForm(props: TaskInputFormProps) {
           render={({ field }) => {
             return (
               <FormItem>
+                <FormLabel className="text-stone-50 font-medium">
+                  Task Name
+                </FormLabel>
                 <FormControl>
                   <Input
                     className="bg-stone-900 border-2 border-stone-50 text-stone-50 lg:w-72 w-44"
-                    placeholder="Task Name"
                     type="text"
                     {...field}
                   />
@@ -72,11 +80,16 @@ export default function TaskInputForm(props: TaskInputFormProps) {
           render={({ field }) => {
             return (
               <FormItem>
+                <FormLabel className="text-stone-50 font-medium">
+                  Difficulty
+                </FormLabel>
                 <Select
                   onValueChange={field.onChange}
                   defaultValue={
                     field.value ? field.value.toString() : undefined
                   }
+                  value={form.getValues("difficulty")}
+                  required
                 >
                   <FormControl>
                     <SelectTrigger className="bg-stone-900 border-2 border-stone-50 text-stone-50">
@@ -109,11 +122,16 @@ export default function TaskInputForm(props: TaskInputFormProps) {
           render={({ field }) => {
             return (
               <FormItem>
+                <FormLabel className="text-stone-50 font-medium">
+                  Importance
+                </FormLabel>
                 <Select
                   onValueChange={field.onChange}
                   defaultValue={
                     field.value ? field.value.toString() : undefined
                   }
+                  value={form.getValues("importance")}
+                  required
                 >
                   <FormControl>
                     <SelectTrigger className="bg-stone-900 border-2 border-stone-50 text-stone-50">
