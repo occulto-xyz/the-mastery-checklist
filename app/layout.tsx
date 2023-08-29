@@ -1,9 +1,9 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Martian_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 import Footer from "./components/layout/Footer";
 import Nav from "./components/layout/Nav";
-import { Analytics } from "@/components/analytics/analytics";
 
 const martian = Martian_Mono({ subsets: ["latin"] });
 
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   // Default metadata
   title: {
     default: "The Mastery Checklist",
-    template: "%s | thechecklist.app",
+    template: "%s | themasterychecklist.app",
   },
   description:
     "The web app to create rule sets that dictate your operating system.",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     title: "The Mastery Checklist",
     description:
       "The web app to create rule sets that dictate your operating system.",
-    url: "thechecklist.app",
+    url: "themasterychecklist.app",
     siteName: "The Mastery Checklist",
     type: "website",
   },
