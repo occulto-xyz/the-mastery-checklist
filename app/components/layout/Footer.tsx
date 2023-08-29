@@ -11,14 +11,10 @@ export default function Footer() {
           <h1 className="lg:text-base text-xs font-extralight text-stone-100">
             Made by
           </h1>
-          <Link
-            href="https://occulto.xyz"
-            passHref
-            target="_blank"
-          >
+          <Link href="https://occulto.xyz" passHref target="_blank">
             <Image
-              src={occultoIcons}
               alt="Occulto Icon"
+              src={occultoIcons}
               width={40}
               height={40}
             />
