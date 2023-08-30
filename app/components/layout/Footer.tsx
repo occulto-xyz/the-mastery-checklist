@@ -14,6 +14,7 @@ export default function Footer() {
           <Link href="https://occulto.xyz" passHref target="_blank">
             <Image
               alt="Occulto Icon"
+              className="animate-spin"
               src={occultoIcons}
               width={40}
               height={40}
