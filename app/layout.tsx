@@ -49,8 +49,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html className="bg-stone-900" lang="en">
-      <body className={`${martian.className} bg-stone-900 overflow-x-hidden`}>
+    <html className="bg-stone-900 overflow-x-hidden" lang="en">
+      <body className={`${martian.className} bg-stone-900`}>
         <Nav />
         {children}
         <Analytics />

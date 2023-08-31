@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Footer() {
   return (
-    <footer className="lg:grid lg:grid-cols-2 flex flex-col p-24 w-screen">
+    <footer className="lg:grid lg:grid-cols-2 flex flex-col p-24 w-screen overflow-x-hidden">
       <div className="grid-cols-1 flex flex-col">
         <div className="flex flex-row lg:space-x-2 lg:justify-start justify-center items-center">
           <h1 className="lg:text-base text-xs font-extralight text-stone-100">
