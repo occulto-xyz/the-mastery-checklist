@@ -21,18 +21,9 @@ export default function Footer() {
             />
           </Link>
         </div>
-        <div className="flex flex-row lg:space-x-2 lg:space-y-0 space-y-4 lg:justify-start justify-center items-center">
-          <h1 className="lg:text-base text-xs font-extralight text-stone-100">
-            Inspired by
-          </h1>
-          <Link
-            className="text-2xl lg:pb-0 pb-4 lg:pl-0 pl-2"
-            href="https://www.instagram.com/lukebelmar/"
-            target="_blank"
-          >
-            👽
-          </Link>
-        </div>
+        <h1 className="lg:text-base text-xs font-extralight text-stone-100 italic">
+          For the Achieivers
+        </h1>
       </div>
       <div className="grid-cols-1 flex flex-col lg:justify-end justify-center lg:items-end items-center">
         <Link
