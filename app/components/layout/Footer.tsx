@@ -8,9 +8,9 @@ export default function Footer() {
     <footer className="lg:grid lg:grid-cols-2 flex flex-col p-24 w-screen overflow-x-hidden">
       <div className="grid-cols-1 flex flex-col">
         <div className="flex flex-row lg:space-x-2 lg:justify-start justify-center items-center">
-          <h1 className="lg:text-base text-xs font-extralight text-stone-100">
+          <h3 className="lg:text-base text-xs font-extralight text-stone-100 italic">
             Made by
-          </h1>
+          </h3>
           <Link href="https://occulto.xyz" passHref target="_blank">
             <Image
               alt="Occulto Icon"
@@ -21,17 +21,13 @@ export default function Footer() {
             />
           </Link>
         </div>
-        <div className="flex flex-row lg:space-x-2 lg:space-y-0 space-y-4 lg:justify-start justify-center items-center">
-          <h1 className="lg:text-base text-xs font-extralight text-stone-100">
-            Inspired by
-          </h1>
-          <Link
-            className="text-2xl lg:pb-0 pb-4 lg:pl-0 pl-2"
-            href="https://www.instagram.com/lukebelmar/"
-            target="_blank"
-          >
-            👽
-          </Link>
+        <div className="space-y-2 mt-2">
+          <div className="flex flex-row space-x-2 lg:justify-start justify-center items-center">
+          <h3 className="lg:text-base text-xs font-extralight text-stone-100 italic">
+            For Lusine
+            </h3>
+            <span className="animate-pulse text-lg">🌸</span> 
+          </div>
         </div>
       </div>
       <div className="grid-cols-1 flex flex-col lg:justify-end justify-center lg:items-end items-center">
